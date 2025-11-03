@@ -13,9 +13,9 @@ ___
 ```
     |                 | Monday | Wednesday | Friday |
     |-----------------|--------|-----------|--------|
-    | Driver          |        |           |        |
-    | Navigator       |        |           |        |
-    | Quality Control |        |           |        |
+    | Driver          | Rafael |           |        |
+    | Navigator       | Fairooz|           |        |
+    | Quality Control | Fairooz|           |        |
 ```
 
 ___
