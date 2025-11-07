@@ -13,9 +13,9 @@ ___
 ```
     |                 | Monday | Wednesday | Friday |
     |-----------------|--------|-----------|--------|
-    | Driver          | Rafael | Fairooz   |       |
-    | Navigator       | Fairooz| Rafael     |        |
-    | Quality Control | Fairooz| Rafael    |        |
+    | Driver          | Rafael | Fairooz   | Rafael |
+    | Navigator       | Fairooz| Rafael    | Fairooz|
+    | Quality Control | Fairooz| Rafael    | Fairooz|
 ```
 
 ___
@@ -26,11 +26,7 @@ ___
     what each one represents:
 
 ```
-    Game: Create the game, setup the window,run the game
-    NPC: create the npc, give direction to move in the screen
-    GOOD NPC: inherit all the attribute from npc
-    Bad NPC: inherit all the attribute from npc, and changes its own method where it goes to opposite side only when it touch the screen sides.
-    Player: Creates the player, initialize it and setup its method with the keys.
+    **Replace This Text With Your Response**
 ```
 
 2.b. Look more closely at the **t11_game.py** file. There are 8 lines; identify if they are 
@@ -39,14 +35,14 @@ ___
     c) method calls to another class
 
 ```
-    self.size = 800, 600                              # **Replace This Text With Your Response**
-    self.running = True                               # **Replace This Text With Your Response**
-    pygame.init()                                     # **Replace This Text With Your Response**
-    self.screen = pygame.display.set_mode(self.size)  # **Replace This Text With Your Response**
-    self.clock = pygame.time.Clock()                  # **Replace This Text With Your Response**
-    self.player = Player(self.size)                   # **Replace This Text With Your Response**
-    self.good_npc = NPC(self.size)                    # **Replace This Text With Your Response**
-    self.screen.fill('#9CBEBA')                       # **Replace This Text With Your Response**
+    self.size = 800, 600                              # instance parameters
+    self.running = True                               # instance parameters
+    pygame.init()                                     # method calls to another class
+    self.screen = pygame.display.set_mode(self.size)  # method calls within the class
+    self.clock = pygame.time.Clock()                  # method calls to another class
+    self.player = Player(self.size)                   # method calls to another class
+    self.good_npc = NPC(self.size)                    # method calls to another class
+    self.screen.fill('#9CBEBA')                       # method calls within the class
 ```
 
 2.c. Parse through the `run()` method of t11_game.py. In particular, note how the game handles 
@@ -58,7 +54,9 @@ ___
 In your own words, describe how the four items above are accomplished in the Game class:
 
 ```
-    **Replace This Text With Your Response**
+    The method run executes a loop that constantly checks with conditionals if the sprites are touching, if they are the game 
+    will stop (with specific messages for each collision), otherwise it keeps running and allows them to move. It updates the 
+    screen at a 24 frames per second rate
 ```
 
 _Return to the Google Doc to continue the assignment._
