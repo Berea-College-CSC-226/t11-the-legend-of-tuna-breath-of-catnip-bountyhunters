@@ -26,7 +26,11 @@ ___
     what each one represents:
 
 ```
-    **Replace This Text With Your Response**
+    Game: Create the game, setup the window,run the game
+    NPC: create the npc, give direction to move in the screen
+    GOOD NPC: inherit all the attribute from npc
+    Bad NPC: inherit all the attribute from npc, and changes its own method where it goes to opposite side only when it touch the screen sides.
+    Player: Creates the player, initialize it and setup its method with the keys.
 ```
 
 2.b. Look more closely at the **t11_game.py** file. There are 8 lines; identify if they are 
