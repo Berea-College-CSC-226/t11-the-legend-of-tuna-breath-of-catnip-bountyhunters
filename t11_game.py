@@ -65,6 +65,11 @@ class Game:
                 self.tuna.movement(pygame.key.get_pressed())
                 self.tacocat.movement()
                 self.whiskers.movement()
+                if c == 60:
+                    npc.speedup()
+                    c=0
+                if d == 180:
+                    boost.spawn()
                 self.screen.fill('#9CBEBA')
                 self.screen.blit(self.tuna.surf, self.tuna.rect)
                 self.screen.blit(self.tacocat.surf, self.tacocat.rect)
